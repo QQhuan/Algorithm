@@ -1,7 +1,7 @@
 #include<iostream>   
 using namespace std;   
   
-const int SIZE = 50;   
+const int SIZE = 100;   
 int a[SIZE][SIZE];   
   
 void copy(int n);   
@@ -14,9 +14,11 @@ int main()
 {   
   
     int n;   
-    int i,j;   
+    int i,j;  
+	cout << "请输入远动员的数量N:" << endl; 
     cin >> n;   
-    tournament(n);   
+    tournament(n); 
+	cout << "赛程安排如下：" << endl;  
     if(odd(n))   // n为奇数和偶数输出情况不同，要分别考虑   
     {   //奇数情况 
         for(i = 1; i<=n; i++)   
